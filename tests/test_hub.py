@@ -17,7 +17,6 @@ class TestDataLoader(unittest.TestCase):
         train_loader = torch.utils.data.DataLoader(pytorch_dataset,
                                                    batch_size=32,
                                                    num_workers=4)
-        self.assertIsInstance(pytorch_dataset, list)
         self.assertIsInstance(train_loader, torch.utils.data.DataLoader)
         self.assertIsInstance(train_loader,
                               hub.collections.dataset.core.TorchDataset)
