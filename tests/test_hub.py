@@ -22,6 +22,5 @@ class TestDataLoader(unittest.TestCase):
         self.assertIsInstance(train_loader, torch.utils.data.DataLoader)
 
 
-
 if __name__ == "__main__":
     unittest.main()
